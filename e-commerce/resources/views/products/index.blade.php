@@ -17,7 +17,7 @@
             @endif
             <div class="col s12">
                 <hr>
-                <a href="/products/create" class="btn btn-primary">ajouter un produit</a>
+                <a href="{{url('/products.create')}}" class="btn btn-primary">ajouter un produit</a>
                 <hr>
                 <table class="table">
                     <thead>
