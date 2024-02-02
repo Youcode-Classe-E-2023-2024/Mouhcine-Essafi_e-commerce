@@ -14,13 +14,13 @@ use App\Http\Controllers\ProductController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
 
 
 Route::get('/products', [ProductController::class, 'liste_produits']);
-Route::get('/products/create', function () {
+Route::get('/products.create', function () {
     return view('/products/form-ajouter');
 });
 Route::post('/products/create/traitement', [ProductController::class, 'create_produit']);
