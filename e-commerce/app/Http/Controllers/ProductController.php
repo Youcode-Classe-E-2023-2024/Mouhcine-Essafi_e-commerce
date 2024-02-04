@@ -81,7 +81,7 @@ class ProductController extends Controller
         $produit->quantity = $request->quantity;
         $produit->update();
 
-        return redirect('/products')->with('status', 'Le produit a ete modifie avec success');
+        return redirect('/products/show/' . $produit->id )->with('status', 'Le produit a ete modifie avec success');
     }
 
     /**
