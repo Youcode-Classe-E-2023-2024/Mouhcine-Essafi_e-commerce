@@ -21,14 +21,22 @@
             <div class="col-md-12">
                 @if (session('status'))
                 <div class="alert alert-success">
-                    {{session('status')}}
+                    {{ session('status') }}
                 </div>
                 @endif
+
+                @if (count($produits) == 0)
+                <div class="alert alert-info">
+                    No products added
+                </div>
+                @endif
+                
                 <ul>
                     @foreach ($errors->all() as $error)
                     <li class="alert alert-danger"> {{ $error }} </li>
                     @endforeach
                 </ul>
+                
                 <h2>ALL <b>Products</b></h2>
                 <!-- Button to trigger modal -->
                 <div class="d-flex justify-content-center">
