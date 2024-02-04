@@ -53,8 +53,8 @@
                                         <div class="thumb-content">
                                             <h4>{{ $produit->name }}</h4>
                                             <p class="item-price">
-                                                <strike>${{ $produit->price }}</strike>
-                                                <b>{{ $produit->price }} DH</b>
+                                                <strike>{{ $produit->price }}DH</strike>
+                                                <b>{{ $produit->price }}DH</b>
                                             </p>
                                             <a href="{{url('/products/show/' . $produit->id ) }}" class="btn btn-primary">Details</a>
                                         </div>
